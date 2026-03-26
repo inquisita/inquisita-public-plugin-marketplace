@@ -1,0 +1,20 @@
+{
+    "name": "inquisita-core",
+    "version": "1.0.0",
+    "description": "Teaches Claude how to use Inquisita, a document intelligence platform for legal, regulatory, and compliance workflows. Upload, process, search, and analyze multimodal documents with structured results.",
+    "author": {
+        "name": "Evan Kerr"
+    },
+    "homepage": "https://inquisita.ai",
+    "repository": "https://github.com/inquisita/inquisita-plugin-marketplace",
+    "keywords": [
+        "inquisita",
+        "legal",
+        "litigation",
+        "regulatory",
+        "compliance",
+        "document-management",
+        "document-analysis"
+    ],
+    "mcpServers": "./.mcp.json"
+}
