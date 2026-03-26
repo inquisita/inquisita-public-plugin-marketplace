@@ -25,4 +25,3 @@ See individual plugin directories for specific license terms.
 ## Learn More
 
 Visit [inquisita.ai](https://inquisita.ai) to learn about the platform and get started.
-# inquisita-public-plugin-marketplace
