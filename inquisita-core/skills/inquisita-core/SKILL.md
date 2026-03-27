@@ -255,7 +255,7 @@ ORDER BY enrichments->'relevance'->>'level'
 Inquisita has a web interface where users can browse their matters, documents, and collections visually. When you create or modify resources, share the relevant link so the user can see their data:
 
 - **Matter:** `https://inquisita.ai/app/matters/{matter_id}`
-- **Collections:** `https://inquisita.ai/app/matters/{matter_id}/collections`
+- **Collections:** `https://inquisita.ai/app/matters/{matter_id}/collections?collection={collection_id}`
 
 After creating a matter, uploading documents, or building collections, include the appropriate link in your response. The web interface lets users browse documents, view collection contents, and explore analysis results without needing to write SQL — it's the human-friendly counterpart to the API work you're doing as an agent.
 
