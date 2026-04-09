@@ -64,6 +64,8 @@ inquisita_discover → inquisita_query
 
 Always call `inquisita_discover` first to see what views, columns, categories, and metadata are available.
 
+**Critical: never ask the user to write SQL.** When a user asks a natural-language question about their documents ("who attended the September 21, 2021 Lookout Ridge meeting?", "what are the liability caps in our vendor contracts?"), it is your job to translate that into the appropriate `discover` + `query` calls. Do not respond by asking the user "what SQL query or WHERE clause would you like to use?" — the user is not expected to know SQL or the schema. Call `discover` to see the available views and columns, then write the SQL yourself, combining it with semantic and keyword search as needed. If you genuinely cannot answer after a reasonable search (data not ingested, ambiguous question), explain what you tried in plain language — do not punt by asking the user for a query.
+
 **Three search modes, combinable in one query:**
 
 - **SQL filtering:** Direct WHERE clauses on metadata, file type, category, tags
@@ -265,6 +267,7 @@ After creating a matter, uploading documents, or building collections, include t
 2. **Writing vague analysis prompts.** The analysis LLM has no case context. Include parties, claims, and specific instructions.
 3. **Forgetting to discover first.** Always call `discover` before querying to see available views, columns, and enrichment fields.
 4. **Not waiting for document processing.** Freshly uploaded documents need 30-120 seconds before they're fully indexed and searchable.
+5. **Asking the user to write SQL.** SQL is your job. When a user asks a natural-language question, call `discover` and translate it into a query yourself. Never respond with "what WHERE clause would you like to use?" — the user does not know the schema, and from their perspective the agent is broken when you ask.
 
 ## Examples
 
