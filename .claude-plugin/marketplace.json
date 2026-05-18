@@ -1,21 +1,17 @@
 {
-    "name": "inquisita-public-plugin-marketplace",
+    "name": "inquisita",
     "owner": {
-        "name": "Evan Kerr",
-        "email": "evan@inquisita.ai"
+        "name": "Inquisita",
+        "url": "https://inquisita.ai"
     },
     "metadata": {
-        "description": "Inquisita plugins for document intelligence, legal, regulatory, and compliance workflows",
-        "version": "1.0.0"
+        "description": "The Inquisita plugin for Claude — document intelligence for legal, regulatory, and compliance workflows."
     },
     "plugins": [
         {
-            "name": "inquisita-core",
-            "source": "./inquisita-core",
-            "description": "Teaches Claude how to use Inquisita, a document intelligence platform for legal, regulatory, and compliance workflows.",
-            "version": "1.0.0",
-            "category": "document-intelligence",
-            "tags": ["legal", "litigation", "regulatory", "compliance", "document-analysis"]
+            "name": "inquisita",
+            "source": "./",
+            "description": "Connect Claude to Inquisita to upload, process, search, and analyze documents — with structured results that persist as shared organizational knowledge."
         }
     ]
 }

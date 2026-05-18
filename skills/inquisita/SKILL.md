@@ -1,5 +1,5 @@
 ---
-name: inquisita-core
+name: inquisita
 description: >
   Core skill for using Inquisita, a document intelligence platform. Use this skill
   whenever the user mentions "Inquisita", wants to create a matter, upload documents,
