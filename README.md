@@ -4,33 +4,37 @@ The official [Inquisita](https://inquisita.ai) plugin for Claude — a document 
 
 ## Install in Claude Cowork (recommended)
 
-### 1. Add the Inquisita marketplace
+### 1. Open Cowork → Customize
 
-In Claude Desktop, open the **Cowork** tab → **Customize** → add a marketplace from GitHub:
+In Claude Desktop, switch to the **Cowork** tab and open **Customize**.
 
-```
-inquisita/inquisita-plugin
-```
+![Cowork sidebar](./assets/screenshots/1-cowork-sidebar.png)
 
-![Add marketplace dialog](./assets/screenshots/1-add-marketplace.png)
+### 2. Add a marketplace
 
-### 2. Install the Inquisita plugin
+Under **Personal plugins**, click **+** → **Create plugin** → **Add marketplace**.
 
-Browse plugins and install **inquisita**.
+![Customize → Add marketplace](./assets/screenshots/2-customize-add-marketplace.png)
 
-![Inquisita listing in Browse plugins](./assets/screenshots/2-browse-plugins.png)
+### 3. Paste the Inquisita marketplace URL
 
-### 3. Install the bundled connector
+Enter `inquisita/inquisita-plugin` and click **Sync**.
 
-Open the plugin's settings and install the **Inquisita** connector. *This second step is required — installing the plugin alone does not add the connector.*
+![Add marketplace dialog](./assets/screenshots/3-add-marketplace-dialog.png)
 
-![Plugin settings — install connector](./assets/screenshots/3-install-connector.png)
+### 4. Confirm the plugin synced
 
-### 4. Sign in
+The `inquisita-plugin` marketplace appears under **Personal**, and the Inquisita plugin is listed. The dropdown should show "Sync automatically" enabled so you receive updates.
 
-The Inquisita connector now appears under **Connectors**. Sign in when prompted on first use.
+![Plugin synced](./assets/screenshots/4-plugin-synced.png)
 
-![Connector under Connectors panel](./assets/screenshots/4-connectors-panel.png)
+### 5. Install the Inquisita connector
+
+Open the **Inquisita** plugin's **Connectors** tab and click **Install**. Sign in when prompted — Claude is now connected to Inquisita.
+
+![Install connector](./assets/screenshots/5-install-connector.png)
+
+> Installing the plugin alone does not connect the MCP. The connector must be installed from the plugin's settings as a second step — that's what registers Inquisita under **Connectors** and triggers sign-in.
 
 ## Install in Claude Code (CLI)
 
